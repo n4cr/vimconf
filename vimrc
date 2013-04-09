@@ -12,9 +12,6 @@ noremap <space> viw
 " move lines up/down
 noremap - ddp
 noremap _ ddkkp
-" deleteline
-inoremap <c-d> <esc>ddi
-inoremap <c-u> <esc>viwUi
 
 let mapleader = ","
 let maplocalleader = "\\"
@@ -31,6 +28,9 @@ vnoremap <leader>" <esc>`<i"<esc>`>la"<esc>
 " goto begining of line
 nnoremap H V<esc>`<
 nnoremap L V<esc>`>
+nnoremap J <c-d> 
+nnoremap K <c-u>
+
 inoremap jk <esc> 
 iabbrev tset test
 inoremap <esc> <nop>
@@ -60,7 +60,7 @@ set timeout ttimeoutlen=50
 "
 augroup filetypes
     autocmd!
-autocmd BufWritePre *.html :normal gg=G
+"autocmd BufWritePre *.html :normal gg=G
 autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 autocmd FileType python :iabbrev <buffer> iff if:<left> 
 autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
@@ -77,6 +77,9 @@ set statusline+=%y\
 set statusline+=[%04l]\/
 set statusline+=%L\ 
 set statusline+=[%c]
+syntax enable
+set background=dark
+colorscheme solarized
 "-----------------
 set numberwidth=4
 set tabstop=4
