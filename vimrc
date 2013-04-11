@@ -31,7 +31,7 @@ nnoremap L V<esc>`>
 nnoremap J <c-d> 
 nnoremap K <c-u>
 
-inoremap jk <esc> 
+inoremap jk <c-[>
 iabbrev tset test
 inoremap <esc> <nop>
 inoremap <c-c> <nop>
@@ -80,6 +80,8 @@ set statusline+=[%c]
 syntax enable
 set background=dark
 colorscheme solarized
+nnoremap <A-,> <c-w><
+nnoremap <A-.> <c-w>>
 "-----------------
 set numberwidth=4
 set tabstop=4
