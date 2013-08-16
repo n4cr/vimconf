@@ -19,7 +19,7 @@ nnoremap <leader>d dd
 nnoremap <leader>U viwU
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <leader>l dd
+noremap <leader>l dd
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 "nnoremap <leader>o :vsplit<cr>:E<cr>
@@ -79,6 +79,7 @@ set statusline+=%L\
 set statusline+=[%c]
 syntax enable
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 nnoremap <A-,> <c-w><
 nnoremap <A-.> <c-w>>
