@@ -6,6 +6,9 @@ set nornu " relative number
 set sr " shift round to auto indent correctly
 set showmatch "show the matched prantez
 set matchtime=5 " time to show the prantez 
+set hlsearch " highlight matches
+set ignorecase " case insensitive search
+set incsearch
 " remove lines by pressing -
 "map <c-d> dd
 noremap <space> viw
