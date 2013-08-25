@@ -1,6 +1,7 @@
 " this is a comment
 "echom ">^.^<"
 " boolean operation: :set no<name>
+set t_Co=256
 set number " show line number
 set nornu " relative number
 set sr " shift round to auto indent correctly
@@ -9,6 +10,7 @@ set matchtime=5 " time to show the prantez
 set hlsearch " highlight matches
 set ignorecase " case insensitive search
 set incsearch
+set viminfo='50,<1000,s100,:0,n~/.viminfo " marks will be remembered for 50 files
 " remove lines by pressing -
 "map <c-d> dd
 noremap <space> viw
@@ -105,3 +107,9 @@ set backspace=indent,eol,start
 filetype plugin on
 let g:pydiction_location = '/store/software/vim_plugin/complete-dict'
 
+" Uncomment the following to have Vim jump to the last position when                                                       
+" " reopening a file
+if has("autocmd")
+   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
