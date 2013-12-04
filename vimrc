@@ -27,6 +27,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 noremap <leader>l dd
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+vmap b :!git blame =expand("%:p")  \| sed -n =line("',=line("'>") p
 "nnoremap <leader>o :vsplit<cr>:E<cr>
 " this is used to quite a block but has errors
 vnoremap <leader>" <esc>`<i"<esc>`>la"<esc>
@@ -50,7 +51,8 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-nnoremap <tab> <c-w>w
+" nnoremap <tab> <c-w>w " adding this blocks forward jumps
+" nnoremap <S-tab> <c-I> " jumpp back on shift tab
 let c='a'
 " this scringt is to enable alt key in gnome terminal
 while c <= 'z'
@@ -113,3 +115,4 @@ if has("autocmd")
    au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+set runtimepath^=~/.vim/bundle/ctrlp.vim
