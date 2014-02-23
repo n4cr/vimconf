@@ -22,7 +22,7 @@ let mapleader = ","
 let maplocalleader = "\\"
 nnoremap <leader>d dd
 nnoremap <leader>U viwU
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :tabe $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 noremap <leader>l dd
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
@@ -40,7 +40,6 @@ nnoremap K <c-u>
 inoremap jk <c-[>
 iabbrev tset test
 inoremap <esc> <nop>
-inoremap <c-c> <nop>
 "disable arrow keys
 inoremap <up> <nop>
 inoremap <down> <nop>
@@ -49,8 +48,8 @@ inoremap <right> <nop>
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
+nnoremap <left> :tabprevious <cr>
+nnoremap <right> :tabnext <cr>
 " nnoremap <tab> <c-w>w " adding this blocks forward jumps
 " nnoremap <S-tab> <c-I> " jumpp back on shift tab
 let c='a'
