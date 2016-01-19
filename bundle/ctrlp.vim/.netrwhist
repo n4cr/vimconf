@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/nasir/dev/TeleSupporter/appengine/application/scoreboard/v2_0'
-let g:netrw_dirhist_2='/Users/nasir/dev/Telesport-API/appengine/application/scoreboard/v2_0'
-let g:netrw_dirhist_3='/Users/nasir/dev/voorspellen/voorspellen/views'
-let g:netrw_dirhist_4='/Users/nasir/dev/voorspellen/voorspellen/config'
-let g:netrw_dirhist_5='/Users/nasir/voorspelen-env/lib/python2.7/site-packages'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/nasir/dev/adoor/electron-react-boilerplate'
+let g:netrw_dirhist_2='/Users/nasir/dev/adoor/electron-react-boilerplate/app'
+let g:netrw_dirhist_3='/Users/nasir/dev/adoor/electron-react-boilerplate/app/components'
+let g:netrw_dirhist_4='/Users/nasir/dev/adoor/electron-react-boilerplate'
+let g:netrw_dirhist_5='/Users/nasir/dev/adoor/electron-react-boilerplate/app'
+let g:netrw_dirhist_6='/Users/nasir/dev/adoor/electron-react-boilerplate/app/components'
+let g:netrw_dirhist_7='/Users/nasir/dev/adoor/electron-react-boilerplate'
+let g:netrw_dirhist_8='/Users/nasir/dev/adoor/electron-react-boilerplate/app'
+let g:netrw_dirhist_9='/Users/nasir/dev/adoor/electron-react-boilerplate/app/components'

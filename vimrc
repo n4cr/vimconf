@@ -9,12 +9,14 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+"Plugin 'gmarik/Vundle.vim'
+
+Plugin 'mxw/vim-jsx'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -26,7 +28,7 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 " Plugin 'user/L9', {'name': 'newL9'}
-Bundle 'git://github.com/davidhalter/jedi-vim'
+"Bundle 'git://github.com/davidhalter/jedi-vim'
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -144,6 +146,8 @@ inoremap <A-j> <Esc>:m+<CR>==gi
 inoremap <A-k> <Esc>:m-2<CR>==gi
 vnoremap <A-j> :m'>+<CR>gv=gv
 vnoremap <A-k> :m-2<CR>gv=gv
+let g:jsx_ext_required = 0
+
 set backspace=indent,eol,start
 filetype plugin on
 let g:pydiction_location = '/store/software/vim_plugin/complete-dict'
@@ -155,3 +159,5 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
