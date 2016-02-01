@@ -47,6 +47,8 @@ filetype plugin indent on    " required
 " ******** Vundle
 "echom ">^.^<"
 " boolean operation: :set no<name>
+execute pathogen#infect()
+
 set t_Co=256
 set number " show line number
 set nornu " relative number
