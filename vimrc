@@ -5,14 +5,14 @@ filetype off                  " required
 set t_BE=
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 "Plugin 'gmarik/Vundle.vim'
 
-Plugin 'mxw/vim-jsx'
+"Plugin 'mxw/vim-jsx'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -32,7 +32,7 @@ Plugin 'mxw/vim-jsx'
 "Bundle 'git://github.com/davidhalter/jedi-vim'
 "
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+"call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -130,7 +130,7 @@ set statusline+=[%c]
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+" colorscheme solarized
 nnoremap <A-,> <c-w><
 nnoremap <A-.> <c-w>>
 "-----------------
